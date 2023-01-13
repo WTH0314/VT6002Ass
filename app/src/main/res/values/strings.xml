@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VT6002app</string>
+    <string name="title_home">Home</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_account">Account</string>
+    <string name="title_signup">Sign up Account</string>
+    <string name="title_Login">Login Account</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrateguy="preserve" translatable="false">AIzaSyBozjpKLmPnAA551QSzbY_rUh4bvzGM2IY</string>
+</resources>

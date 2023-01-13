@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.vt6002app.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.vt6002app.ui.menu.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_navigation_menu_to_navigation_account"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/action_navigation_menu_to_mapsActivity1"
+            app:destination="@id/mapsActivity1" />
+        <action
+            android:id="@+id/action_navigation_menu_to_mapsActivity2"
+            app:destination="@id/mapsActivity2" />
+        <action
+            android:id="@+id/action_navigation_menu_to_mapsActivity3"
+            app:destination="@id/mapsActivity3" />
+        <action
+            android:id="@+id/action_navigation_menu_to_mapsActivity4"
+            app:destination="@id/mapsActivity4" />
+        <action
+            android:id="@+id/action_navigation_menu_to_mapsActivity5"
+            app:destination="@id/mapsActivity5" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.vt6002app.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_login"
+            app:destination="@id/navigation_login" />
+        <action
+            android:id="@+id/action_navigation_account_to_navigation_signup"
+            app:destination="@id/navigation_signup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.vt6002app.ui.LoginActivity"
+        android:label="@string/title_Login"
+        tools:layout="@layout/view_loginactivity" />
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="com.example.vt6002app.ui.SignupActivity"
+        android:label="@string/title_signup"
+        tools:layout="@layout/view_signupactivity" />
+    <activity
+        android:id="@+id/mapsActivity1"
+        android:name="com.example.vt6002app.ui.Map.MapsActivity1"
+        android:label="MapsActivity1"
+        tools:layout="@layout/activity_maps"/>
+    <activity
+        android:id="@+id/mapsActivity2"
+        android:name="com.example.vt6002app.ui.Map.MapsActivity2"
+        android:label="MapsActivity2"
+        tools:layout="@layout/activity_maps"/>
+    <activity
+        android:id="@+id/mapsActivity3"
+        android:name="com.example.vt6002app.ui.Map.MapsActivity3"
+        android:label="MapsActivity3"
+        tools:layout="@layout/activity_maps"/>
+    <activity
+        android:id="@+id/mapsActivity4"
+        android:name="com.example.vt6002app.ui.Map.MapsActivity4"
+        android:label="MapsActivity4"
+        tools:layout="@layout/activity_maps"/>
+    <activity
+        android:id="@+id/mapsActivity5"
+        android:name="com.example.vt6002app.ui.Map.MapsActivity5"
+        android:label="MapsActivity5"
+        tools:layout="@layout/activity_maps"/>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.vt6002app.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main"/>
+
+</navigation>
